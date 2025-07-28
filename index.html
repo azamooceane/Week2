@@ -4,36 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cripto prices</title>
-    <style>
-      table{
-        width:100px;
-        border-collapse: collapse;
-      }
-      th, td{
-        padding: 8px;
-        text-align: left;
-        border:2px solid blue;
-        border-radius: 4px;
-      }
-      
-    </style>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <h1 class="text-3xl font-bold">Crypto Prices</h1>
-    <table class="bg-amber-100"></div>
-      <thead>
+    <div id="app">
+      <h2>Crypto Prices</h2>
+      <table>
+      <thread>
         <tr>
-          <th>Image</th>
+          <th>Rank</th>
           <th>Name</th>
           <th>Symbol</th>
-          <th>prices</th>
-          <th>last updated</th>
+          <th>Price USD</th>
+          <th>Change 24h</th>
         </tr>
-      </thead>
-      <tbody id="prices">
+      </thread>
+      <tbody id="tbody">
+
+      </tbody>
       </table>
-    <script type="module" src="/src/main.js"></script>
+    </div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
